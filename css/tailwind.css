@@ -14,7 +14,10 @@
         font-family: 'DM Serif Text', serif;
         @apply text-gray-500 
     }
-    
+
+    .image-border{
+        color: rgb(0, 115, 153);
+    }
     .image{
         background-image: url("../images/image1.jpg");
         background-position: center;
@@ -27,6 +30,8 @@
     .list-item{
         @apply text-gray-600
     }
+
+
 }
 
 @tailwind base;
