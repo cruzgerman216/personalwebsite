@@ -31,6 +31,9 @@
         @apply text-gray-600
     }
 
+    .description{
+        left: 5%;
+    }
 
 }
 
