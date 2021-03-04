@@ -1,11 +1,18 @@
 @layer components{
-    .quote{
+    .header{
         font-family: 'Averia Serif Libre', cursive;
-        @apply text-2xl sm:text-4xl md:text-5xl lg:text-6xl;
     }
 
+    .quote{
+        @apply text-2xl sm:text-4xl md:text-5xl lg:text-6xl;
+    }
     .hand-writing{
         font-family: 'Courgette', cursive;
+    }
+
+    .paragraph{
+        font-family: 'DM Serif Text', serif;
+        @apply text-gray-500 
     }
     
     .image{
@@ -17,9 +24,9 @@
         height:60%;
     }
 
-    nav{
+    .list-item{
+        @apply text-gray-600
     }
-     
 }
 
 @tailwind base;
