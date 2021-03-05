@@ -1,4 +1,13 @@
 @layer components{
+
+    body{
+        box-sizing: border-box;
+    }
+
+    .outro{
+        background-color: #acb8ff;
+    }
+    
     .header{
         font-family: 'Averia Serif Libre', cursive;
     }
