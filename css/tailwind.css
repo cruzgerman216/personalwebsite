@@ -39,6 +39,10 @@
         left: 5%;
     }
 
+    .leftdescription{
+        left: -5%;
+    }
+
 }
 
 @tailwind base;
