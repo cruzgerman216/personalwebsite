@@ -3,6 +3,10 @@
         font-family: 'Averia Serif Libre', cursive;
     }
 
+    .subheader{
+        font-family: 'Lalezar', cursive;
+    }
+
     .quote{
         @apply text-2xl sm:text-4xl md:text-5xl lg:text-6xl;
     }
