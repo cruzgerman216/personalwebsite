@@ -55,6 +55,16 @@
         left: -5%;
     }
 
+    .scroll-animation{
+        animation-duration: 1s;
+        animation-delay: 1s;
+        transition:top .5s linear;
+        -webkit-transition:top .5s linear;
+        -moz-transition:top .5s linear;
+        -ms-transition:top .5s linear;
+        -o-transition:top .5s linear;
+}
+
 }
 
 @tailwind base;
