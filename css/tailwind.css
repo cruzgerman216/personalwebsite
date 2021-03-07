@@ -7,6 +7,12 @@
         box-sizing: border-box;
     }
 
+    #navbar{
+        opacity: 90%;
+        box-shadow: 0 10px 30px -10px white;
+        backdrop-filter: blur(10px)
+    }
+
     .outro{
         background-color: #acb8ff;
     }
@@ -69,7 +75,6 @@
         color: rgb(0, 115, 153);
 
     }
-
     .image-border-animation1{
         animation-duration: 1s;
         animation-delay: 1s;
