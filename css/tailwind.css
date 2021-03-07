@@ -140,6 +140,21 @@
         left: 20%
     }
 
+    .link-underline{
+        @apply border-b-2 border-blue-200 border-dotted;
+    }
+    .link-underline-hover{
+        @apply border-blue-600;
+    }
+    .link-animation{
+        animation-duration: 1s;
+        animation-delay: 1s;
+        transition:.5s linear;
+        -webkit-transition:.5s linear;
+        -moz-transition:.5s linear;
+        -ms-transition:.5s linear;
+        -o-transition:.5s linear;
+    }
 }
 
 @tailwind base;
