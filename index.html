@@ -21,7 +21,7 @@
                 German Cruz
               </a>
         <ul class="inline-block float-right">
-          <li class=" inline-block px-5 text-blue-300"
+          <li class=" inline-block px-5 text-blue-300 link-animation hover:text-blue-500"
           data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -32,7 +32,7 @@
           >
             <a href="#about">ABOUT</a>
           </li>
-          <li class="inline-block px-5 text-blue-300"
+          <li class="inline-block px-5 text-blue-300 link-animation hover:text-blue-500"
           data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -43,7 +43,7 @@
           >
             <a href="#projects" >PROJECTS</a>
           </li>
-          <li class="inline-block px-5 text-blue-300"
+          <li class="inline-block px-5 text-blue-300 link-animation hover:text-blue-500"
           data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -54,7 +54,7 @@
           >
             <a href="/resume.pdf" target="_blank">RESUME</a>
           </li>
-          <li class="inline-block  px-5 text-blue-300"
+          <li class="inline-block  px-5 text-blue-300 link-animation hover:text-blue-500"
           data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -114,7 +114,7 @@
 
       <div class="py-20" id="about"></div>
       <!-- About Me Section-->
-        <section class="grid grid-cols-2 w-full px-24" 
+        <section class="grid grid-cols-2 w-full px-24 md:px-12" 
         data-aos="fade-in"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -128,7 +128,7 @@
                 <div class="w-4/6 m-auto relative image-animation">
                   <div class="image-overlay"></div>
                   <img class="relative z-10 top-0 left-0" src="./images/about_me.png" />
-                  <div class="absolute border-2 border-blue-200 image-border image-border-animation1 w-full h-full top-10 -right-10  bg-white" ></div>
+                  <div class="absolute border-2 border-blue-200 image-border image-border-animation1 w-full h-full top-10 -right-10 bg-white" ></div>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
                       <a href="https://flatironschool.com/" target="_blank" class="text-blue-300 link-animation link-underline hover:border-blue-600 hover:text-blue-600 visited:text-purple-600">Flatiron School</a>.
                     </p>
                     <p class="paragraph text-gray-500 py-2">Here are some of the technologies I have expereince with:</p>
-                    <ul class="grid grid-cols-3 px-5" >
+                    <ul class="grid grid-cols-3 px-5 md:text-sm md:px-1">
                       <li><span class="text-blue-400">▹</span> <span class="list-item">React</span></li>
                       <li><span class="text-blue-400">▹</span> <span class="list-item">Node</span></li>
                       <li><span class="text-blue-400">▹</span> <span class="list-item">Ruby on Rails</span></li>
@@ -163,7 +163,7 @@
               <!-- Project Section-->
               <!-- Youtube Clone-->
       <div class="py-20" id="projects"></div>
-              <section class="grid grid-cols-2 w-full px-24 py-12"
+              <section class="grid grid-cols-2 w-full px-24 py-12 md:px-12"
               data-aos="fade-in"
               data-aos-offset="200"
               data-aos-delay="50"
@@ -174,8 +174,8 @@
               >
                 <div class="py-4">
                   <div class="grid grid-cols-11 ">
-                      <div class="col-span-3 text-center"><h1 class="text-2xl text-blue-200 header">PROJECTS</h1></div>
-                      <div class=" col-span-3 grid grid-cols-1 ">
+                      <div class="col-span-3 text-center md:col-span-5"><h1 class="text-2xl text-blue-200 header">PROJECTS</h1></div>
+                      <div class=" col-span-3 md:col-span-4 grid grid-cols-1 ">
                         <div></div>
                         <div class="border-t border-gray-700 "></div>
                       </div>
@@ -183,17 +183,17 @@
                 </div>
                 <div></div>
                 <div>
-                  <div class="h-1/6">
+                  <div class="h-1/6 md:h-auto">
                     <h3 class="subheader">YOUTUBE CLONE</h3>
                   </div>
-                  <div class="h-3/6 relative">
-                    <div class="absolute top-1/4 description w-full p-4 bg-gray-100 shadow-2xl z-20">
+                  <div class="h-3/6 relative md:h-auto">
+                    <div class="absolute top-1/4 description w-full p-4 bg-gray-100 shadow-2xl z-20 md:static">
                       <p class="paragraph text-gray-500">A website that mirrors youtube.com. You are able to subscribe to your favorite channel, like
                         videos you enjoy and comment on videos. Personalize your own channel and profile image based on your own interest.
                       </p>
                     </div>
                   </div>
-                  <div class="h-1/6 px-4">
+                  <div class="h-1/6 px-4 md:h-auto">
                     <div class="col-span-2 grid grid-cols-4 py-4 text-center">
                       <div class="text-blue-400">React</div>
                       <div class="text-blue-400">Redux</div>
@@ -201,22 +201,27 @@
                       <div class="text-blue-400 text-right">React-Bootstrap</div>
                     </div>
                   </div>
-                  <div class="h-1/6 py-2">
+                  <div class="h-1/6 py-2 md:h-auto">
                     <a href="https://github.com/cruzgerman216/react-youtubeclone" target="_blank">
-                      <svg class="h-3/4 px-2 inline-block link-animation hover:text-blue-300" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                      <svg class="h-3/4 md:h-8 px-2 inline-block link-animation hover:text-blue-300" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
                     <a href="https://germancruzclone.web.app/" target="_blank">
-                        <svg class="h-3/4 px-2  inline-block link-animation hover:text-blue-300" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        <svg class="h-3/4 md:h-8 px-2  inline-block link-animation hover:text-blue-300" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                       </a>
                     </div>
                 </div>
-                <a href="https://germancruzclone.web.app/" target="_blank">
-                  <div class="w-5/6 relative image-animation">
-                    <div class="image-overlay"></div>
-                    <img class="m-auto relative z-10 top-0 left-0 border-2" src="./images/youtube.jpg"/>
-                    <div class="absolute border-2 border-blue-200 image-border  image-border-animation1 w-full h-full top-10 -right-10"></div>
+
+                  <div class="flex h-5/5 ">
+                    <a class="m-auto block md:m-0" href="https://germancruzclone.web.app/" target="_blank">
+                      <div class="md:w-full lg:w-5/6 xl:w-5/6 relative image-animation ">
+                        <div class="image-overlay"></div>
+                        <img class="m-auto relative z-10 top-0 left-0 border-2" src="./images/youtube.jpg"/>
+                        <div class="absolute border-2 border-blue-200 image-border image-border-animation1 w-full h-full top-10 -right-10 md:top-5 md:-right-5"></div>
+                      </div>
+                     </a>
                   </div>
-                </a>
+
+
             </section>
               <!-- Craigslist Clone-->
               <section class="grid grid-cols-2 w-full my-24 px-24 py-12"
