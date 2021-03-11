@@ -16,7 +16,7 @@ window.onscroll = function(){
 const clickHam = () =>{
     const nav = document.getElementById("responsive-navbar");
     const screen_overlay = document.getElementById("screen-overlay");
-
+    const bars = document.getElementById("bars");
     if(nav.classList.contains("hide-nav")){
         nav.classList.remove("hide-nav");
         nav.classList.add("show-nav");
@@ -39,8 +39,11 @@ const clickHam = () =>{
         screen_overlay.classList.remove("opacity-50");
         screen_overlay.classList.add("opacity-0");
     }
+
+    bars.classList.toggle("change")
+
 }
 
 const clickOverlay = () =>{
-    
+
 }
