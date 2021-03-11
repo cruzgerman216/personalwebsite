@@ -10,7 +10,7 @@
     #navbar{
         opacity: 90%;
         box-shadow: 0 10px 30px -10px white;
-        backdrop-filter: blur(10px)
+        backdrop-filter: blur(10px);
     }
 
     .outro{
@@ -76,7 +76,6 @@
 
     .image-border{
         color: rgb(0, 115, 153);
-
     }
 
     .image-border-animation1{
@@ -163,6 +162,53 @@
         -moz-transition:.5s linear;
         -ms-transition:.5s linear;
         -o-transition:.5s linear;
+    }
+
+    .ham{
+        width: 35px;
+        height: 5px;
+        background-color: lightblue;
+        margin: 6px 0;
+    }
+    .nav-list-animation{
+        animation-duration: 1s;
+        animation-delay: 1s;
+        transition:.5s linear;
+        -webkit-transition:.5s linear;
+        -moz-transition:.5s linear;
+        -ms-transition:.5s linear;
+        -o-transition:.5s linear;
+    }
+
+    .overlay-animation{
+        animation-duration: 1s;
+        animation-delay: 1s;
+        transition:.5s linear;
+        -webkit-transition:.5s linear;
+        -moz-transition:.5s linear;
+        -ms-transition:.5s linear;
+        -o-transition:.5s linear;
+    }
+
+    .hide-nav{
+        right:-50%;
+    }
+    .show-nav{
+        right:0;
+    }
+
+    .pause{
+        overflow:hidden;
+    }
+
+    #screen-overlay{
+        height:100vh;
+        width:100vh;
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:gray;
+        z-index:39;
     }
 }
 

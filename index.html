@@ -14,13 +14,19 @@
     </head>
     <body>
     <!-- fixed navbar -->
-      <nav class="bg-white fixed z-50 w-full px-12 pt-4 pb-2 top-0 scroll-animation" id="navbar"
-      >
-              <a href="#intro" class="max-h-10 text-blue-200  hand-writing"
-              >
-                German Cruz
-              </a>
-        <ul class="inline-block float-right">
+      <nav class="bg-white fixed z-50 w-full px-12 pt-4 pb-2 top-0 scroll-animation" id="navbar">
+        <!-- logo -->
+        <a href="#intro" class="max-h-10 text-blue-200  hand-writing">
+          German Cruz
+        </a>
+        <!-- hamburger -->
+        <div onClick="clickHam()" class=" float-right md:inline-block lg:hidden xl:hidden">
+          <div class="ham"></div>
+          <div class="ham"></div>
+          <div class="ham"></div>
+        </div>
+         <!-- xl lg navbar -->
+        <ul class="inline-block float-right md:hidden lg:inline-block xl:inline-block">
           <li class=" inline-block px-5 text-blue-300 link-animation hover:text-blue-500"
           data-aos="fade-down"
           data-aos-offset="200"
@@ -67,7 +73,31 @@
           </li>
         </ul>
       </nav>
-    
+
+      <!-- sm md navbar -->
+      <div class="nav-list-animation bg-white w-2/4 m-auto h-full hide-nav fixed z-40" id="responsive-navbar">
+        <div class="flex h-full">
+          <div class="m-auto">
+            <ul class="text-lg">
+              <li class="px-5 text-blue-300 link-animation hover:text-blue-500" >
+                <a href="#about" onClick="clickHam()" >ABOUT</a>
+              </li>
+              <li class=" px-5 text-blue-300 link-animation hover:text-blue-500">
+                <a href="#projects" onClick="clickHam()" >PROJECTS</a>
+              </li>
+              <li class="px-5 text-blue-300 link-animation hover:text-blue-500">
+                <a href="/resume.pdf" target="_blank">RESUME</a>
+              </li>
+              <li class="inline-block  px-5 text-blue-300 link-animation hover:text-blue-500" >
+                <a href="mailto:cruzgerman216@gmail.com">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- screen overlay -->
+      <div onClick="clickHam()" class="overlay-animation opacity-0" id="screen-overlay"></div>
     <!-- intro container -->
       <div class="image w-full lg:h-full relative" id="intro">
         <!-- <div class="bg-blue-900 h-full w-full relative z-10 opacity-50"></div> -->
@@ -174,7 +204,7 @@
                 <div class="py-4">
                   <div class="grid grid-cols-11 ">
                       <div class="col-span-3 text-center md:col-span-5"><h1 class="text-2xl text-blue-200 header">PROJECTS</h1></div>
-                      <div class=" col-span-3 md:col-span-4 grid grid-cols-1 ">
+                      <div class="col-span-3 md:col-span-4 grid grid-cols-1 ">
                         <div></div>
                         <div class="border-t border-gray-700 "></div>
                       </div>
@@ -183,7 +213,7 @@
                 <div></div>
               </section> 
               <!-- youtube section -->
-            <section class="grid grid-cols-2 w-full my-24 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
+            <section class="grid grid-cols-2 w-full mb-12 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
             data-aos="fade-in"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -221,7 +251,7 @@
                 </div>
                     <a class="md:w-full lg:w-full xl:w-full lg:opacity-100 xl:opacity-100 lg:h-auto xl:h-auto lg:static xl:static flex h-5/5 xl:block lg:block md:absolute md:px-12 md:opacity-20 md:h-full" href="https://germancruzclone.web.app/" target="_blank">
                       <div class=" lg:w-full xl:w-full lg:h-auto xl:h-auto md:w-full relative image-animation md:h-full">
-                        <div class="image-overlay"></div>
+                        <div class="image-overlay md:opacity-50 lg:opacity-0 xl:opacity-0"></div>
                         <img class="md:w-full lg:w-full xl:w-full lg:h-auto xl:h-auto m-auto relative z-10 top-0 md:h-full left-0 border-2" src="./images/youtube.jpg"/>
                         <div class="absolute border-2 border-blue-200 image-border image-border-animation1 w-full h-full top-10 -right-10 md:top-5 md:-right-5"></div>
                       </div>
@@ -229,7 +259,7 @@
             </section>
 
               <!-- Craigslist Clone-->
-              <section class="grid grid-cols-2 w-full my-24 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
+              <section class="grid grid-cols-2 w-full mb-12 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
               data-aos="fade-in"
               data-aos-offset="200"
               data-aos-delay="50"
@@ -240,7 +270,7 @@
               >
                 <a class="md:w-full lg:w-full xl:w-full lg:opacity-100 xl:opacity-100 lg:h-auto xl:h-auto lg:static xl:static flex h-5/5 xl:block lg:block md:absolute md:px-12 md:opacity-20 md:h-full" href="https://german-cruz-craigslist-clone.netlify.app/"  target="_blank">
                   <div class=" lg:w-full xl:w-full lg:h-auto xl:h-auto md:w-full relative image-animation md:h-full">
-                    <div class="image-overlay2"></div>
+                    <div class="image-overlay2 md:opacity-50 lg:opacity-0 xl:opacity-0"></div>
                     <img class="md:w-full lg:w-full xl:w-full lg:h-auto xl:h-auto m-auto relative z-10 top-0 lg:left-image xl:left-image md:h-full md:left-0  border-2" src="./images/craigslistphoto.png"/>
                     <div class="absolute border-2 border-blue-200 image-border image-border-animation2 w-full h-full top-8 -left-3"></div>
                   </div>
@@ -274,7 +304,7 @@
                 </div>
             </section>
               <!-- 720 Behavioral Health-->
-            <section class="grid grid-cols-2 w-full my-24 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
+            <section class="grid grid-cols-2 w-full mb-12 px-24 md:px-12 md:pb-24 md:w-auto md:relative"
             data-aos="fade-in"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -312,7 +342,7 @@
                 </div>
                     <a class="md:w-full lg:w-full xl:w-full lg:opacity-100 xl:opacity-100 lg:h-auto xl:h-auto lg:static xl:static flex h-5/5 xl:block lg:block md:absolute md:px-12 md:opacity-20 md:h-full" href="https://github.com/cruzgerman216/720BehavioralHealth" target="_blank">
                       <div class=" lg:w-full xl:w-full lg:h-auto xl:h-auto md:w-full relative image-animation md:h-full">
-                        <div class="image-overlay"></div>
+                        <div class="image-overlay md:opacity-50 lg:opacity-0 xl:opacity-0"></div>
                         <img class="md:w-full lg:w-full xl:w-full lg:h-auto xl:h-auto m-auto relative z-10 top-0 md:h-full left-0 border-2" src="./images/720behvioralhealth.jpg"/>
                         <div class="absolute border-2 border-blue-200 image-border image-border-animation1 w-full h-full top-10 -right-10 md:top-5 md:-right-5"></div>
                       </div>
