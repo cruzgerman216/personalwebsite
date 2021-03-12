@@ -17,6 +17,7 @@ const clickHam = () =>{
     const nav = document.getElementById("responsive-navbar");
     const screen_overlay = document.getElementById("screen-overlay");
     const bars = document.getElementById("bars");
+
     if(nav.classList.contains("hide-nav")){
         nav.classList.remove("hide-nav");
         nav.classList.add("show-nav");
@@ -29,6 +30,14 @@ const clickHam = () =>{
         document.body.classList.remove("pause");
     }else{
         document.body.classList.add("pause");
+    }
+
+    if(screen_overlay.classList.contains("hidden")){
+        screen_overlay.classList.remove("hidden");
+        screen_overlay.classList.add("visibility");
+    }else{
+        screen_overlay.classList.remove("visibility");
+        screen_overlay.classList.add("hidden");
     }
 
     if(screen_overlay.classList.contains("opacity-0")){
