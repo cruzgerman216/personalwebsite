@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build:css": "postcss src/tailwind.css -o static/dist/tailwind.css"
   },
   "repository": {
     "type": "git",
