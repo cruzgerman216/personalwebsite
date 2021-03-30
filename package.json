@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build:css": "postcss src/tailwind.css -o static/dist/tailwind.css"
+    "build": "postcss src/tailwind.css -o build/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "postcss": "^8.2.6",
     "tailwindcss": "^2.0.3",
     "vite": "^2.0.3"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1"
   }
 }
